@@ -1,0 +1,10 @@
+<h1>You're on the create page of user</h1>
+<br/>
+<div>
+	<form action="<%= creating_user_path %>" method="POST">
+  		Name : <br/><input type="text" name="username"><br/><br/>
+		<textarea name="bio">Enter your bio</textarea><br/>
+		<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+		<br/><input type="submit" value="Create your user">
+</form>
+</div>
